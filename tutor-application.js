@@ -71,8 +71,8 @@ function submitting() {
   newSheet.getRange('D:D').setNumberFormat("MM/DD/YYYY");
   newSheet.getRange('E:E').setNumberFormat("HH:MM AM/PM");
   newSheet.getRange('F:F').setNumberFormat("HH:MM AM/PM");
-  newSheet.getRange('G:G').setNumberFormat("HH:MM");
-  row1.getCell(2,8).setNumberFormat("HH:MM");
+  newSheet.getRange('G:G').setNumberFormat("[HH]:MM");
+  row1.getCell(2,8).setNumberFormat("[HH]:MM");
 
   if (tutorSheet.getRange(row,21).getCell(1,1).getValue() != '') {
     var payload = {
