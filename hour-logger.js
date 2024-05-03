@@ -42,7 +42,7 @@ function hours() {
   date.setNumberFormat("MM/DD/YYYY");
   start.setNumberFormat("HH:MM AM/PM");
   end.setNumberFormat("HH:MM AM/PM");
-  hours.setNumberFormat("HH:MM");
+  hours.setNumberFormat("[HH]:MM");
   timestamp.setValue(hoursMASTERSheet.getRange(len+1,1).getCell(1,1).getValue());
   email.setValue(hoursMASTERSheet.getRange(len+1,2).getCell(1,1).getValue());
   tutee.setValue(hoursMASTERSheet.getRange(len+1,3).getCell(1,1).getValue());
